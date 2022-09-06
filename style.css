@@ -1,0 +1,124 @@
+body {
+    background-color: #303030;
+}
+
+#header, #footer {
+    padding: 0.1%;
+    border-radius: 10px;
+    background-color: #505050;
+    margin-top: 0.1%;
+    margin-bottom: 0.1%;
+    height:max-content;
+}
+#midContainer {
+    display: flex;
+    padding: 0.1%;
+    border-radius: 10px;
+    background-color: #606060;
+    margin-top: 0.%;
+    margin-bottom: 0.1%;
+    width: 99.8%;
+    height: 100%;
+    flex-direction: row;
+}
+
+#headerText, #footerText {
+    font-family: "Lucida Console", monospace;
+    font-size: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+#canvasContainer {
+    padding: 0.1%;
+    border-radius: 10px;
+    background-color: #808080;
+    margin: 0.5%;
+    flex:30%;
+    width: 100%;
+    flex-direction: row;
+}
+
+#buttonsContainer {
+    padding: 0.1%;
+    border-radius: 10px;
+    background-color: #808080;
+    margin: 0.5%;
+    flex:30%;
+    width: 100%;
+}
+
+.settingsContainer, #uploadContainer{
+    padding: 0.5%;
+    border-radius: 10px;
+    background-color: #a0a0a0;
+    margin: 0.5%;
+    width: 98%;
+}
+
+#canvas {
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    margin: 0.5%;
+}
+
+@media(max-width: 770px) {
+    #midContainer{
+        flex-direction: column;
+    }
+}
+
+.titluSectiune {
+    font-family: "Lucida Console", monospace;
+    font-size: 100%;
+    text-align: left;
+    font-weight: bold;
+    color: #fff;
+}
+
+.textSectiune {
+    font-family: "Lucida Console", monospace;
+    font-size: 100%;
+    text-align: left;
+    color: #f0f0f0;
+}
+
+#dimensiuniActuale, #pozitiiMaxime {
+    font-family: "Lucida Console", monospace;
+    font-size: 90%;
+    text-align: left;
+    color: #f0f0f0;  
+}
+
+#scalareLungime, #scalareLatime, #xText, #yText {
+    width: 60px;
+    border-radius: 5px;
+    border-color: #000;
+}
+
+#text {
+    width: 178px;
+    border-radius: 5px;
+    border-color: #000;
+}
+
+button {
+    border-color: #000;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0.2%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#histograma {
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    height: 100px;
+    width: 255px;
+}
+
+p {
+    margin: 0.5%;
+}

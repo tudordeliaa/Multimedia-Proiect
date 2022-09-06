@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Editor Fotografii
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="headerText">Editor de fotografii</h1>
+    </div>
+    <div id="midContainer">
+        <div id="canvasContainer">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="buttonsContainer">
+            <div class="settingsContainer" id="histogramContainer" hidden>
+                <p class="titluSectiune">Histograma RGB a zonei selectate</p>
+                <canvas id="histograma" width="255" height="200"></canvas>
+            </div>
+            <div id="uploadContainer">
+                <p class="titluSectiune">Alege fotografia pentru a incepe editarea</p>
+                <input type="file" id="fileBrowser" name="fileBrowser" accept="image/*" multiple="false">
+            </div>
+            <div class="settingsContainer" id="selectionContainer" hidden>
+                <button id="btnSelectareTotala">Selectare totala</button>
+                <button id="btnStergereSelectie">Stergere selectie</button>
+                <button id="btnDecupareSelectie">Decupare selectie</button>
+                <button id="btnRestaurareImagine">Restaurare imagine</button>
+                <a id="linkDownload" href="" download="imagine_editata">
+                    <button id="btnLinkDownload" hidden>Descarca imaginea editata</button>
+                </a>
+            </div>
+            <div class="settingsContainer" id="efectContainer" hidden>
+                <p class="titluSectiune">Adaugare efect pe selectie</p>
+                <button id="btnSepia">Sepia</button>
+                <button id="btnMonocolor">Monocolor</button>
+                <button id="btnInverted">Inverted</button>
+            </div>
+            <div class="settingsContainer" id="textContainer" hidden>
+                <p class="titluSectiune">Adaugare text</p>
+                <p class="textSectiune">
+                    Culoare: <input id="culoareText" type="color"><br>
+                    Dimensiune: <input id="dimensiuneText" type="range" min="1" max="100" value="10">
+                </p>
+                <p id="textSize" class="textSectiune">10 px.</p>
+                <p class="textSectiune">
+                    Text: <input id="text" type="text"><br>
+                    Pozitie: X:<input id="xText" type="number" value="0" min="0"> Y:<input id="yText" type="number"
+                        value="0" min="0">
+                </p>
+                <p id="pozitiiMaxime"></p>
+                <button id="btnAdaugareText">Adaugare text</button>
+            </div>
+            <div class="settingsContainer" id="scaleContainer" hidden>
+                <p class="titluSectiune">Scalare imagine</p>
+                <p class="textSectiune">
+                    Noua lungime: <input id="scalareLungime" type="number"><br>
+                    Noua latime: <input id="scalareLatime" type="number"><br></p>
+                <p id="dimensiuniActuale"></p>
+                <button id="btnScalare">Scalare</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
